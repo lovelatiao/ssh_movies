@@ -27,7 +27,7 @@
 <!--        <default-interceptor-ref name="mystack"/>-->
         <action name="a_login" class="com.action.UserAction" method="adminLogin">
             <result name="error">/error.jsp</result>
-            <result name="success">/a_success.jsp</result>
+            <result name="success">/ori</result>
         </action>
         <action name="u_login" class="com.action.UserAction" method="userLogin">
             <result name="error">/error.jsp</result>

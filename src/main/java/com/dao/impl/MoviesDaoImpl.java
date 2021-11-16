@@ -18,14 +18,16 @@ public class MoviesDaoImpl implements MoviesDao {
     @Override
     public List AllMovie() {
         Session session = hibernateTemplate.getSessionFactory().openSession();
-        return null;
+        Query query = session.createQuery("from Movies ");
+        return query.list();
     }
 
     @Override
     public List selectMovieByName(String name) {
         Session session = hibernateTemplate.getSessionFactory().openSession();
-
-        return null;
+        Query query = session.createQuery("from Movies where mName = ?");
+        query.setParameter(0,name);
+        return query.list();
     }
 
     @Override
