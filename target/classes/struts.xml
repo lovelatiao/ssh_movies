@@ -5,6 +5,7 @@
         "classpath:struts-2.3.dtd">
 
 <struts>
+    <constant name="struts.enable.DynamicMethodInvocation" value="true"/>
     <constant name="struts.custom.i18n.resources" value="resource"/>
 <!--    <constant name="struts.custom.i18n.resources" value="resource_zh_CN"/>-->
     <package name="walker" extends="struts-default">
@@ -25,13 +26,13 @@
 
         <!--上面配置了拦截器栈，但是没有被执行...下面配置执行拦截器-->
 <!--        <default-interceptor-ref name="mystack"/>-->
-        <action name="a_login" class="com.action.UserAction" method="adminLogin">
-            <result name="error">/error.jsp</result>
-            <result name="success">/a_success.jsp</result>
+        <action name="a_login" class="" method="">
+            <result name="error">/test/error.jsp</result>
+            <result name="success">/administer.jsp</result>
         </action>
         <action name="u_login" class="com.action.UserAction" method="userLogin">
-            <result name="error">/error.jsp</result>
-            <result name="success">/u_success.jsp</result>
+            <result name="error">/test/error.jsp</result>
+            <result name="success">/origin.jsp</result>
         </action>
     </package>
 </struts>

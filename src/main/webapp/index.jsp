@@ -11,13 +11,13 @@
     <title>登录</title>
 </head>
 <body>
-<form action="administer.jsp" method="post">
+<form action="a_login" method="post">
 <div align="center" style="font-family: 黑体;font-size:20px">
     <h2>管理员登录</h2>
-账&nbsp&nbsp&nbsp&nbsp号:<input type="text" name="user" size="20">
+账&nbsp&nbsp&nbsp&nbsp号:<input type="text" name="admin.aName" size="20">
     <br>
     <br>
-    密&nbsp&nbsp&nbsp&nbsp码:<input type="password" name="password" size="20">
+    密&nbsp&nbsp&nbsp&nbsp码:<input type="password" name="admin.aPassword" size="20">
     <br><br>
     <input type="submit" value="确认" onclick="window.open('administer.jsp','fullscreen=yes');">
     <br><br>
