@@ -9,14 +9,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
 import javax.annotation.Resource;
-import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 import java.util.Map;
 
 @Controller
 public class UserAction extends ActionSupport {
-    @Autowired
-    private HttpServletRequest request;
     @Autowired
     @Resource
     private UserService userService;

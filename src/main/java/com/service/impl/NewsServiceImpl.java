@@ -30,6 +30,11 @@ public class NewsServiceImpl implements NewsService {
     }
 
     @Override
+    public List queryNews(int id) {
+        return newsDao.queryNews(id);
+    }
+
+    @Override
     public List allNews() {
         return newsDao.allNews();
     }

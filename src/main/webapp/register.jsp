@@ -10,7 +10,13 @@
 <head>
     <title>注册</title>
 </head>
-<body >
+<body style="background-image: url('shixun/photo/bg.jpg');background-size: auto">
+<Br>
+<br>
+<Br>
+<Br>
+<br>
+<br>
 <div align="center" style="font-family: 黑体;font-size:20px">
 <h2>注册信息</h2>
 账&nbsp&nbsp&nbsp&nbsp号:<input type="text" name="user" size="20">

@@ -31,9 +31,10 @@
     <br><br>
     简&nbsp&nbsp&nbsp&nbsp介:<textarea style="height: 100px;width: 170px"></textarea>
         <br><br>
-        上传路径:
+        上传路径:<input type="text" size="20">
         <br><br>
         上传海报:
+        <input type="text" size="20">
     <br><Br>
     <input type="submit" value="确定">
     </a>

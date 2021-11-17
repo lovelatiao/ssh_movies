@@ -10,8 +10,14 @@
 <head>
     <title>登录</title>
 </head>
-<body>
+<body style="background-image: url('shixun/photo/bg.jpg');background-size: auto">
 <form action="a_login" method="post">
+    <br>
+    <br>
+    <Br>
+    <Br>
+    <br>
+    <br>
 <div align="center" style="font-family: 黑体;font-size:20px">
     <h2>管理员登录</h2>
 账&nbsp&nbsp&nbsp&nbsp号:<input type="text" name="admin.aName" size="20">
@@ -25,6 +31,12 @@
     <a href="forget.jsp">忘记密码</a>
     <br><br>
     <a href="register.jsp">点击此处注册</a>
+    <Br>
+    <Br>
+    <br>
+    <br>
+    <img src="shixun/photo/origin.jpg" width="45" height="50" onclick="window.open('one.jsp') " style="cursor: hand">
+
 </div>
 </form>
 <%--<script>--%>

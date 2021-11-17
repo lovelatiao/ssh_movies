@@ -15,7 +15,7 @@ public class Movies {
     private String mCountry;
     private String mLanguage;
     private Timestamp mTime;
-    private byte[] mPhoto;
+    private String mPhoto;
     private String mPath;
     private Integer mType;
 
@@ -101,11 +101,11 @@ public class Movies {
 
     @Basic
     @Column(name = "m_photo")
-    public byte[] getmPhoto() {
+    public String getmPhoto() {
         return mPhoto;
     }
 
-    public void setmPhoto(byte[] mPhoto) {
+    public void setmPhoto(String mPhoto) {
         this.mPhoto = mPhoto;
     }
 
@@ -129,41 +129,7 @@ public class Movies {
         this.mType = mType;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
 
-        Movies that = (Movies) o;
 
-        if (id != that.id) return false;
-        if (mName != null ? !mName.equals(that.mName) : that.mName != null) return false;
-        if (mJianjie != null ? !mJianjie.equals(that.mJianjie) : that.mJianjie != null) return false;
-        if (mDirector != null ? !mDirector.equals(that.mDirector) : that.mDirector != null) return false;
-        if (mActor != null ? !mActor.equals(that.mActor) : that.mActor != null) return false;
-        if (mCountry != null ? !mCountry.equals(that.mCountry) : that.mCountry != null) return false;
-        if (mLanguage != null ? !mLanguage.equals(that.mLanguage) : that.mLanguage != null) return false;
-        if (mTime != null ? !mTime.equals(that.mTime) : that.mTime != null) return false;
-        if (!Arrays.equals(mPhoto, that.mPhoto)) return false;
-        if (mPath != null ? !mPath.equals(that.mPath) : that.mPath != null) return false;
-        if (mType != null ? !mType.equals(that.mType) : that.mType != null) return false;
 
-        return true;
-    }
-
-    @Override
-    public int hashCode() {
-        int result = id;
-        result = 31 * result + (mName != null ? mName.hashCode() : 0);
-        result = 31 * result + (mJianjie != null ? mJianjie.hashCode() : 0);
-        result = 31 * result + (mDirector != null ? mDirector.hashCode() : 0);
-        result = 31 * result + (mActor != null ? mActor.hashCode() : 0);
-        result = 31 * result + (mCountry != null ? mCountry.hashCode() : 0);
-        result = 31 * result + (mLanguage != null ? mLanguage.hashCode() : 0);
-        result = 31 * result + (mTime != null ? mTime.hashCode() : 0);
-        result = 31 * result + Arrays.hashCode(mPhoto);
-        result = 31 * result + (mPath != null ? mPath.hashCode() : 0);
-        result = 31 * result + (mType != null ? mType.hashCode() : 0);
-        return result;
-    }
 }

@@ -1,6 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib uri="/struts-tags" prefix="c" %>
 
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page isELIgnored="false"%>
 
 <html>
@@ -24,7 +24,7 @@
         <input type="image" src="shixun/photo/search1.jpg" border="0" height="18" width="20">
         &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 <%--</font><a onclick="window.open('index.jsp','newwindow','height=400, width=400,toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no,top=250,left=600')" style="cursor: hand">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="shixun/photo/user.jpg" style="cursor:hand" width="30" height="30" ></a>--%>
-</font><a href="index.jsp" style="cursor: hand">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="shixun/photo/user.jpg" style="cursor:hand" width="30" height="30" ></a>
+</font><a href="index.jsp" style="cursor: hand"><img src="shixun/photo/user.jpg" style="cursor:hand" width="30" height="30" ></a>
 <br>
     <hr>
 </div>
@@ -46,7 +46,7 @@
 <a href="news.jsp" style="font-size: 20px;color:black;cursor: hand;text-decoration: none">近日资讯</a>
     <hr>
 <br>
-<%--   <c:forEach var="n" items="${requestScope.news_list}">--%>
+<%--   <c:forEach var="n" items="${requestScope.oneNews}">--%>
 <%--       <%int a = 0; a++;%>--%>
 <%--       <tr>--%>
 <%--            <%=a%>.  ${n.nTitle}--%>

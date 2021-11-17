@@ -26,6 +26,18 @@ public class NewsDaoImpl implements NewsDao {
         list = query.list();
         return list;
     }
+
+    @Override
+    public List queryNews(int id) {
+        List list;
+        Session session = hibernateTemplate.getSessionFactory().openSession();
+
+        Query query = session.createQuery("from News where id = ?");
+        query.setParameter(0,id);
+        list = query.list();
+        return list;
+    }
+
     @Override
     public List allNews() {
         Session session = hibernateTemplate.getSessionFactory().openSession();
@@ -35,16 +47,11 @@ public class NewsDaoImpl implements NewsDao {
 
     @Override
     public int addNews(News news) {
-        System.out.println("dao");
-
         Session session = hibernateTemplate.getSessionFactory().openSession();
-        System.out.println("dao");
         session.save(news);
         Transaction transaction = session.beginTransaction();
         transaction.commit();
         session.close();
-        System.out.println("dao");
-
         return 0;
     }
 
@@ -52,6 +59,9 @@ public class NewsDaoImpl implements NewsDao {
     public int upNews(News news) {
         Session session = hibernateTemplate.getSessionFactory().openSession();
         session.update(news);
+        Transaction transaction = session.beginTransaction();
+        transaction.commit();
+        session.close();
         return 0;
     }
 
@@ -59,6 +69,16 @@ public class NewsDaoImpl implements NewsDao {
     public int delNewsById(News news) {
         Session session = hibernateTemplate.getSessionFactory().openSession();
         session.delete(news);
+        Transaction transaction = session.beginTransaction();
+        transaction.commit();
+        session.close();
+        return 0;
+    }
+
+    @Override
+    public int addSee(String id) {
+        Session session = hibernateTemplate.getSessionFactory().openSession();
+
         return 0;
     }
 

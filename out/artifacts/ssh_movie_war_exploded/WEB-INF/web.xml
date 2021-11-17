@@ -21,7 +21,7 @@
     <url-pattern>/*</url-pattern>
   </filter-mapping>
   <welcome-file-list>
-    <welcome-file>origin.jsp</welcome-file>
+    <welcome-file>one.jsp</welcome-file>
   </welcome-file-list>
   <!-- 上下文监听器 -->
   <listener>

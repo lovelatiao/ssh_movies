@@ -37,6 +37,9 @@
         <action name="addNews" class="com.action.NewsAction" method="addNews">
             <result name="success">/addnews.jsp</result>
         </action>
+        <action name="oneNews" class="com.action.NewsAction" method="oneNews">
+            <result name="one">/origin.jsp</result>
+        </action>
     </package>
 </struts>
 

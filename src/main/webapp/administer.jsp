@@ -118,10 +118,10 @@
     <img src="shixun/photo/administer2.jpg" width="30" height="30">&nbsp<font size="4" color="black">账户管理</font>
     <hr>
     <br>
-    <a onclick="window.open('mdfpassword.jsp','newwindow','height=400, width=400,toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no,top=250,left=600')" style="cursor: hand">修改密码</a>
+    <a onclick="blank.src='mdfpassword.jsp'" style="cursor: hand">修改密码</a>
     <br>
     <br>
-    <a href="origin.jsp">退出账户</a>
+    <a href="one.jsp">退出账户</a>
     <br>
     <br>
 </font>

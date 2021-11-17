@@ -34,6 +34,7 @@
         上传路径:
         <br><br>
         上传海报:
+        <input type="file" name="">
     <br><Br>
     <input type="submit" value="确定">
     </a>

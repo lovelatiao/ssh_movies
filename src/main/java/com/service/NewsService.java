@@ -7,6 +7,7 @@ import java.util.List;
 public interface NewsService {
     //根据点击量查询新闻
     public List queryNewsBySee();
+    public List queryNews(int id);
     //查询全部新闻
     public List allNews();
     //添加新闻

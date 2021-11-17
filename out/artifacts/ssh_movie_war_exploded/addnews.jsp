@@ -40,7 +40,7 @@
             </tr>
             <tr>
                 <td></td>
-                <td><input type="submit" value="确定"></td>
+                <td><input type="submit" value="提交"></td>
             </tr>
         </table>
 <%--        <a style="font-size: 20px">--%>
