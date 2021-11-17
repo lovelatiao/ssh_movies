@@ -1,6 +1,7 @@
 package com.po;
 
 import javax.persistence.*;
+import java.sql.Date;
 import java.sql.Timestamp;
 
 @Entity
@@ -11,7 +12,7 @@ public class News {
     private String nJianjie;
     private String nContext;
     private String nAuthor;
-    private Timestamp nTime;
+    private Date nTime;
     private Integer nSee;
 
     @Id
@@ -66,11 +67,11 @@ public class News {
 
     @Basic
     @Column(name = "n_time")
-    public Timestamp getnTime() {
+    public Date getnTime() {
         return nTime;
     }
 
-    public void setnTime(Timestamp nTime) {
+    public void setnTime(Date nTime) {
         this.nTime = nTime;
     }
 

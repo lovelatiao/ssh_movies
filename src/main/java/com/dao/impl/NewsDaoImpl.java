@@ -3,6 +3,7 @@ package com.dao.impl;
 import com.dao.NewsDao;
 import com.po.News;
 import org.hibernate.Session;
+import org.hibernate.Transaction;
 import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.orm.hibernate5.HibernateTemplate;
@@ -34,8 +35,16 @@ public class NewsDaoImpl implements NewsDao {
 
     @Override
     public int addNews(News news) {
+        System.out.println("dao");
+
         Session session = hibernateTemplate.getSessionFactory().openSession();
+        System.out.println("dao");
         session.save(news);
+        Transaction transaction = session.beginTransaction();
+        transaction.commit();
+        session.close();
+        System.out.println("dao");
+
         return 0;
     }
 

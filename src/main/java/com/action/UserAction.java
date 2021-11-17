@@ -31,11 +31,15 @@ public class UserAction extends ActionSupport {
 
     public String adminLogin(){
         List list = userService.adminLogin(admin.getaName(),admin.getaPassword());
+        ActionContext actionContext = ActionContext.getContext();
+        Map<String,Object> request = (Map)actionContext.get("request");
         if(list.size() > 0){
-            request.setAttribute("msg","登录成功:)");
+            System.out.println("登陆成功");
+            request.put("msg","登录成功:)");
             return SUCCESS;
         }
-        request.setAttribute("msg","登陆失败:(，请检查账号或密码");
+        System.out.println("登陆失败");
+        request.put("msg","登陆失败:(，请检查账号或密码");
 
         return ERROR;
     }

@@ -13,6 +13,17 @@ public class NewsServiceImpl implements NewsService {
     @Autowired
     @Resource
     private NewsDao newsDao;
+
+    @Override
+    public int upNews(News news) {
+        return newsDao.upNews(news);
+    }
+
+    @Override
+    public int delNews(News news) {
+        return newsDao.delNewsById(news);
+    }
+
     @Override
     public List queryNewsBySee() {
         return newsDao.queryNewsBySee();
@@ -24,15 +35,10 @@ public class NewsServiceImpl implements NewsService {
     }
 
     @Override
-    public int addNews(News news) {return newsDao.addNews(news);}
-
-    @Override
-    public int upNews(News news) {
-        return newsDao.upNews(news);
+    public int addNews(News news) {
+        newsDao.addNews(news);
+        return 0;
     }
 
-    @Override
-    public int delNews(News news) {
-        return newsDao.delNewsById(news);
-    }
+
 }
