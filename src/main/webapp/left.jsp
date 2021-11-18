@@ -31,7 +31,7 @@
                             <table width="100%" border="0" cellspacing="0" cellpadding="0">
                                 <tr>
                                     <td style="font-size: 16px">
-                                        <a onclick="null" style="cursor: hand">电影管理</a>
+                                        <a onclick="allMovies()" style="cursor: hand">电影管理</a>
                                     </td>
                                 </tr>
                             </table>
@@ -130,6 +130,10 @@
     function allNews() {
         document.forms[0].action = "allNews"
         document.forms[0].submit();
+    }
+    function allMovies() {
+        document.forms[1].action = "allMovies"
+        document.forms[1].submit();
     }
 </script>
 </html>
