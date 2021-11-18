@@ -10,6 +10,12 @@
 <head>
     <title>Title</title>
 </head>
+<style>
+    th{
+        background-color: rgb(241, 240, 240);
+        color: #0c0808;
+    }
+</style>
 <body >
 &nbsp&nbsp&nbsp<button onclick="window.location='addfilm.jsp'" style="background-color:rgba(0,89,241,0.36);height: 30px;width: 100px">上新</button>
 <div align="center" style="font-family: 黑体;">
@@ -20,7 +26,7 @@
     <input type="image" src="shixun/photo/search1.jpg" border="0" style="height:30px;width: 30px;">
     <hr>
     <%//数据库中信息%>
-    <table border="1" align="center" style="height: 20%;width: 80%;font-family: 黑体;font-size:15px">
+    <table border="1" cellspacing="0" align="center" style="width: 60%;font-family: 黑体;font-size:15px">
         <tr>
             <th>
             id

@@ -17,7 +17,7 @@ public interface MoviesDao {
 
     public List selectMovieByType(String type);
 
-    public int AddFilm(Movies movies);
+    public int addFilm(Movies movies);
 
     public int upFilm(Movies movies);
 

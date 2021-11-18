@@ -17,6 +17,9 @@
     }
 </style>
 <body>
+<span>
+
+</span>
 <form action="addNews" method="post">
     <div align="left" style="font-family: 黑体;font-size: 20px">
         <br>

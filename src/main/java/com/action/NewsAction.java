@@ -21,6 +21,13 @@ public class NewsAction extends ActionSupport {
 
     private News news;
 
+    public String allNews(){
+        ActionContext actionContext = ActionContext.getContext();
+        Map<String,Object> request = (Map)actionContext.get("request");
+        request.put("news",newsService.allNews());
+        return SUCCESS;
+    }
+
     public String addNews(){
         news.setnTime(new Date(System.currentTimeMillis()));
         news.setnSee(0);

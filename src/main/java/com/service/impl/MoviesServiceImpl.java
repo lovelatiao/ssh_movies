@@ -37,8 +37,8 @@ public class MoviesServiceImpl implements MoviesService {
     }
 
     @Override
-    public int AddFilm(Movies movies) {
-        return moviesDao.AddFilm(movies);
+    public int addFilm(Movies movies) {
+        return moviesDao.addFilm(movies);
     }
 
     @Override

@@ -3,6 +3,7 @@ package com.dao.impl;
 import com.dao.MoviesDao;
 import com.po.Movies;
 import org.hibernate.Session;
+import org.hibernate.Transaction;
 import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.orm.hibernate5.HibernateTemplate;
@@ -55,9 +56,12 @@ public class MoviesDaoImpl implements MoviesDao {
     }
 
     @Override
-    public int AddFilm(Movies movies) {
+    public int addFilm(Movies movies) {
         Session session = hibernateTemplate.getSessionFactory().openSession();
         session.save(movies);
+        Transaction transaction = session.beginTransaction();
+        transaction.commit();
+        session.close();
         return 0;
     }
 

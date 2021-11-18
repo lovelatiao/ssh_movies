@@ -43,6 +43,12 @@
         <action name="queryNews" class="com.action.NewsAction" method="queryNews">
             <result name="success">/new.jsp</result>
         </action>
+        <action name="addMovies" class="com.action.MoviesAction" method="addMovies">
+            <result name="success">/addfilm.jsp</result>
+        </action>
+        <action name="allNews" class="com.action.NewsAction" method="allNews">
+            <result name="success">/findnews.jsp</result>
+        </action>
     </package>
 </struts>
 

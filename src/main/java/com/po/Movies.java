@@ -1,6 +1,7 @@
 package com.po;
 
 import javax.persistence.*;
+import java.sql.Date;
 import java.sql.Timestamp;
 import java.util.Arrays;
 
@@ -14,7 +15,7 @@ public class Movies {
     private String mActor;
     private String mCountry;
     private String mLanguage;
-    private Timestamp mTime;
+    private Date mTime;
     private String mPhoto;
     private String mPath;
     private Integer mType;
@@ -91,11 +92,11 @@ public class Movies {
 
     @Basic
     @Column(name = "m_time")
-    public Timestamp getmTime() {
+    public Date getmTime() {
         return mTime;
     }
 
-    public void setmTime(Timestamp mTime) {
+    public void setmTime(Date mTime) {
         this.mTime = mTime;
     }
 
