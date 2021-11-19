@@ -9,55 +9,49 @@
 <html>
 <head>
     <title>Title</title>
+    <link type="text/css" rel="stylesheet" href="cs.css" />
 </head>
 <style>
     td{
-        font-family: 黑体;
-        font-size: 20px
+        font-size: 15px
     }
 </style>
-<body>
-<span>
-
-</span>
-<form action="addNews" method="post">
-    <div align="left" style="font-family: 黑体;font-size: 20px">
-        <br>
-        <br>
-        <table border="0">
-            <tr>
-                <td>标&nbsp&nbsp&nbsp&nbsp题:</td>
-                <td><input type="text" name="news.nTitle" size="20"></td>
-            </tr>
-            <tr>
-                <td>作&nbsp&nbsp&nbsp&nbsp者:</td>
-                <td><input type="text" name="news.nAuthor" size="20"></td>
-            </tr>
-            <tr>
-                <td>简&nbsp&nbsp&nbsp&nbsp介:</td>
-                <td><textarea name="news.nJianjie" style="height: 100px;width: 500px" ></textarea></td>
-            </tr>
-            <tr>
-                <td>内&nbsp&nbsp&nbsp&nbsp容:</td>
-                <td><textarea name="news.nContext" style="height: 300px;width: 800px"></textarea></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td><input type="submit" value="提交"></td>
-            </tr>
-        </table>
-<%--        <a style="font-size: 20px">--%>
-<%--            标&nbsp&nbsp&nbsp&nbsp题:<input type="text" name="news.nTitle" size="20">--%>
-<%--            <br><br>--%>
-<%--            作&nbsp&nbsp&nbsp&nbsp者:<input type="text" name="news.nAuthor" size="20">--%>
-<%--            <br><Br>--%>
-<%--            简&nbsp&nbsp&nbsp&nbsp介:<textarea name="news.nJianjie" style="height: 50px;width: 170px" ></textarea>--%>
-<%--            <br><br>--%>
-<%--            内&nbsp&nbsp&nbsp&nbsp容:<textarea name="news.nContext" style="height: 100px;width: 170px"></textarea>--%>
-<%--            <br><Br>--%>
-<%--            <input type="submit" value="确定">--%>
-<%--        </a>--%>
+<body style="background-color: rgb(231,234,242);">
+<div class="top">
+    <jsp:include page="header.jsp"></jsp:include>
+</div>
+<div class="row">
+    <div class="column1">
+        <jsp:include page="left.jsp"></jsp:include>
     </div>
-</form>
+    <div class="column">
+        <form action="addNews" method="post">
+                <table class="table-add" border="0">
+                    <tr>
+                        <td>标&nbsp&nbsp&nbsp&nbsp题:</td>
+                        <td><input type="text" name="news.nTitle" size="20"></td>
+                    </tr>
+                    <tr>
+                        <td>作&nbsp&nbsp&nbsp&nbsp者:</td>
+                        <td><input type="text" name="news.nAuthor" size="20"></td>
+                    </tr>
+                    <tr>
+                        <td>简&nbsp&nbsp&nbsp&nbsp介:</td>
+                        <td><textarea name="news.nJianjie" style="height: 100px;width: 500px" ></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>内&nbsp&nbsp&nbsp&nbsp容:</td>
+                        <td><textarea name="news.nContext" style="height: 300px;width: 800px"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="提交"></td>
+                    </tr>
+                </table>
+        </form>
+    </div>
+
+</div>
+
 </body>
 </html>

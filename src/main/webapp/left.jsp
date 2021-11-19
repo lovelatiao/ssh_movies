@@ -17,8 +17,8 @@
         %>
         <tr>
             <td height="27" valign="top" >
-                <a href="Javascript:ShowTR(img<%=m%>,OpenRep<%=m%>)" style="text-decoration: none" ><img
-                        src="shixun/photo/film1.jpg" border="0" alt="展开" id="img<%=m%>" height="30" width="30">&nbsp<font size="4" color="black">电影信息</font>
+                <a href="Javascript:ShowTR(img<%=m%>,OpenRep<%=m%>)" style="text-decoration: none;font-size: 20px;color: #5a9ad0" ><img
+                        src="shixun/photo/film1.jpg" border="0" alt="展开" id="img<%=m%>" height="30" width="30">&nbsp电影信息
                 </a>
             </td>
         <tr id="OpenRep<%=m%>" style="display:none;">
@@ -39,7 +39,7 @@
                     </tr>
                 </table>
                 <Br>
-                    <a style="font-size: 16px;cursor: hand"onclick="blank.src='addfilm.jsp'">上新电影</a>
+                    <a style="font-size: 16px;cursor: hand" href="addfilm.jsp">上新电影</a>
             </td>
         </tr>
     </table>
@@ -66,8 +66,8 @@
     <table width="100%" border="0" cellpadding="0" cellspacing="0" >
         <tr>
             <td height="27" valign="top" >
-                <a href="Javascript:ShowTR1(img1<%=m%>,OpenRep1<%=m%>)" style="text-decoration: none" ><img
-                        src="shixun/photo/news1.jpg" border="0" alt="展开" id="img1<%=m%>" height="30" width="30">&nbsp<font size="4" color="black">新闻资讯</font>
+                <a href="Javascript:ShowTR1(img1<%=m%>,OpenRep1<%=m%>)" style="text-decoration: none;font-size: 20px;color: #5a9ad0" ><img
+                        src="shixun/photo/news1.jpg" border="0" alt="展开" id="img1<%=m%>" height="30" width="30">&nbsp新闻资讯
                 </a>
             </td>
         <tr id="OpenRep1<%=m%>" style="display:none;">
@@ -88,7 +88,7 @@
                     </tr>
                 </table>
                 <Br>
-                <a style="font-size: 16px;cursor: hand"onclick="blank.src='addnews.jsp'">添加咨询</a>
+                <a style="font-size: 16px;cursor: hand" href="addnews.jsp">添加咨询</a>
             </td>
         </tr>
     </table>
@@ -112,7 +112,7 @@
     </script>
     <br>
     <br>
-    <img src="shixun/photo/administer2.jpg" width="30" height="30">&nbsp<font size="4" color="black">账户管理</font>
+    <img src="shixun/photo/administer2.jpg" width="30" height="30">&nbsp<a style="font-size: 20px;color: #5a9ad0">账户管理</a>
     <hr>
     <br>
     <a onclick="blank.src='mdfpassword.jsp'" style="cursor: hand">修改密码</a>

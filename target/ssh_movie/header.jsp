@@ -11,7 +11,10 @@
     <title>Title</title>
 </head>
 <body>
-<font face="黑体" size="5">管理员设置界面</font>
+<div style="color: #5a9ad0;font-size: 30px;padding: 10px">
+    电影后台管理系统
+</div>
+
 <hr>
 </body>
 </html>

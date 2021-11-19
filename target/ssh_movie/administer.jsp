@@ -9,28 +9,12 @@
 <html>
 <head>
     <title>Title</title>
+    <link type="text/css" rel="stylesheet" href="cs.css" />
 </head>
 <style>
     th{
         background-color: rgb(241, 240, 240);
         color: #0c0808;
-    }
-    .column1 {
-        float: left;
-        width: 12%;
-    }
-    .column {
-        float: left;
-        width: 88%;
-        height: 100%;
-        background-color: aliceblue;
-    }
-
-    /* 列后清除浮动 */
-    .row:after {
-        content: "";
-        display: table;
-        clear: both;
     }
 </style>
 <body style="background-image: url('shixun/photo/bg.jpg');background-size: auto">
@@ -41,21 +25,8 @@
     <div class="column1">
         <jsp:include page="left.jsp"></jsp:include>
     </div>
-
     <div class="column">
-
     </div>
-
 </div>
-
-
-
-
-<script>
-    function x() {
-        document.forms[0].action = ""
-        document.forms[0].submit()
-    }
-</script>
 </body>
 </html>

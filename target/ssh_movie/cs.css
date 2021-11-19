@@ -1,0 +1,55 @@
+.column1 {
+    float: left;
+    width: 12%;
+    padding: 10px 10px 200px 10px;
+    border-radius: 10px;
+    background-color: #ffffff
+}
+.column {
+    float: right;
+    width: 84%;
+    height: max-content;
+    border-radius: 10px;
+    background-color: rgb(253, 253, 254);
+    padding: 10px 10px 400px 10px;
+}
+.top {
+    background-color: rgb(255, 255, 255);
+}
+/* 列后清除浮动 */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.list-view{
+    background-color: rgb(229, 232, 241);
+    color: #929daa;
+    font-size: 16px;
+}
+th{
+    padding: 8px;
+}
+.tr-view{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 8px;
+}
+.black {
+    background-color: #e5e8f1;
+}
+.table-view{
+    color: #929daa;
+    padding:10px;
+    width:100%;
+    table-layout:fixed;
+}
+table.table-view tr.a1{
+    background-color:#fbd8e8;
+}
+.table-add {
+    color: #929daa;
+    font-size: 15px;
+    padding: 10px;
+}
