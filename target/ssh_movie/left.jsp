@@ -39,7 +39,7 @@
                     </tr>
                 </table>
                 <Br>
-                    <a style="font-size: 16px;cursor: hand" href="addfilm.jsp">上新电影</a>
+                    <a style="font-size: 16px;cursor: hand" onclick="addMoviesBySelect()">上新电影</a>
             </td>
         </tr>
     </table>
@@ -124,9 +124,10 @@
 </body>
 <form action="allNews" method="post">
 </form>
+<form action="allMovies" method="post"></form>
+<form action="addMoviesBySelect" method="post"></form>
+
 <script>
-    // var blank = document.getElementById('blank');
-    // blank.src = "findfilm.jsp";
     function allNews() {
         document.forms[0].action = "allNews"
         document.forms[0].submit();
@@ -134,6 +135,10 @@
     function allMovies() {
         document.forms[1].action = "allMovies"
         document.forms[1].submit();
+    }
+    function addMoviesBySelect() {
+        document.forms[2].action = "addMoviesBySelect"
+        document.forms[2].submit();
     }
 </script>
 </html>

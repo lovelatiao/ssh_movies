@@ -50,4 +50,13 @@ public class MoviesServiceImpl implements MoviesService {
     public int DelFilm(String id) {
         return moviesDao.DelFilm(id);
     }
+
+    @Override
+    public List AllMoviesType() {return moviesDao.AllMoviesType();}
+
+    @Override
+    public List AllMoviesCountry() {return moviesDao.AllMoviesCountry();}
+
+    @Override
+    public List AllMoviesLanguage() {return moviesDao.AllMoviesLanguage();}
 }

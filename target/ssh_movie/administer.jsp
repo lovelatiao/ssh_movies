@@ -11,14 +11,8 @@
     <title>Title</title>
     <link type="text/css" rel="stylesheet" href="cs.css" />
 </head>
-<style>
-    th{
-        background-color: rgb(241, 240, 240);
-        color: #0c0808;
-    }
-</style>
-<body style="background-image: url('shixun/photo/bg.jpg');background-size: auto">
-<div>
+<body style="background-color: rgb(231,234,242);">
+<div class="top">
     <jsp:include page="header.jsp"></jsp:include>
 </div>
 <div class="row">

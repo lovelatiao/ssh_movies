@@ -19,6 +19,7 @@ public class Movies {
     private String mPhoto;
     private String mPath;
     private Integer mType;
+    private Integer mSee;
 
     @Id
     @Column(name = "id")
@@ -105,7 +106,6 @@ public class Movies {
     public String getmPhoto() {
         return mPhoto;
     }
-
     public void setmPhoto(String mPhoto) {
         this.mPhoto = mPhoto;
     }
@@ -130,7 +130,13 @@ public class Movies {
         this.mType = mType;
     }
 
+    @Basic
+    @Column(name = "m_see")
+    public Integer getmSee() {
+        return mSee;
+    }
 
-
-
+    public void setmSee(Integer mSee) {
+        this.mSee = mSee;
+    }
 }

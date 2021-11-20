@@ -22,4 +22,8 @@ public interface MoviesDao {
     public int upFilm(Movies movies);
 
     public int DelFilm(String id);
+
+    public List AllMoviesType();
+    public List AllMoviesCountry();
+    public List AllMoviesLanguage();
 }

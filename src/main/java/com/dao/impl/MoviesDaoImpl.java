@@ -81,6 +81,27 @@ public class MoviesDaoImpl implements MoviesDao {
         return 0;
     }
 
+    @Override
+    public List AllMoviesType() {
+        Session session = hibernateTemplate.getSessionFactory().openSession();
+        Query query = session.createQuery("from Type ");
+        return query.list();
+    }
+
+    @Override
+    public List AllMoviesCountry() {
+        Session session = hibernateTemplate.getSessionFactory().openSession();
+        Query query = session.createQuery("from Country ");
+        return query.list();
+    }
+
+    @Override
+    public List AllMoviesLanguage() {
+        Session session = hibernateTemplate.getSessionFactory().openSession();
+        Query query = session.createQuery("from Language ");
+        return query.list();
+    }
+
     public HibernateTemplate getHibernateTemplate() {
         return hibernateTemplate;
     }

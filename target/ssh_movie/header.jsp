@@ -14,7 +14,5 @@
 <div style="color: #5a9ad0;font-size: 30px;padding: 10px">
     电影后台管理系统
 </div>
-
-<hr>
 </body>
 </html>

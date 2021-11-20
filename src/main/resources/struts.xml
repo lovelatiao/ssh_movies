@@ -49,6 +49,12 @@
         <action name="allNews" class="com.action.NewsAction" method="allNews">
             <result name="success">/findnews.jsp</result>
         </action>
+        <action name="allMovies" class="com.action.MoviesAction" method="allMovies">
+            <result name="success">/findfilm.jsp</result>
+        </action>
+        <action name="addMoviesBySelect" class="com.action.MoviesAction" method="addMoviesBySelect">
+            <result name="success">/addfilm.jsp</result>
+        </action>
     </package>
 </struts>
 

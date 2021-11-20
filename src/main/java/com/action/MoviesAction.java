@@ -10,6 +10,7 @@ import org.springframework.stereotype.Controller;
 import javax.annotation.Resource;
 import java.applet.AppletContext;
 import java.sql.SQLOutput;
+import java.util.List;
 import java.util.Map;
 
 @Controller
@@ -21,6 +22,9 @@ public class MoviesAction extends ActionSupport {
 
 
     public String allMovies(){
+        ActionContext actionContext = ActionContext.getContext();
+        Map<String,Object> request = (Map) actionContext.get("request");
+        request.put("allMovies",moviesService.AllMovie());
         return SUCCESS;
     }
 
@@ -31,6 +35,15 @@ public class MoviesAction extends ActionSupport {
         ActionContext actionContext = ActionContext.getContext();
         Map<String,Object> request = (Map) actionContext.get("request");
         request.put("msg","电影添加成功");
+        return SUCCESS;
+    }
+
+    public String addMoviesBySelect(){
+        ActionContext actionContext = ActionContext.getContext();
+        Map<String,Object> request = (Map) actionContext.get("request");
+        request.put("type",moviesService.AllMoviesType());
+        request.put("country",moviesService.AllMoviesCountry());
+        request.put("language",moviesService.AllMoviesLanguage());
         return SUCCESS;
     }
 
